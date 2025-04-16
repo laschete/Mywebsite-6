@@ -1,31 +1,119 @@
 <!DOCTYPE html>
 <html lang="nl">
   <head>
-    <meta charset="UTF-8">
-    <title>Lasse's Website</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Lasse Jagersma's Website</title>
     <style>
       body {
-        background: #f0f0f0;
-        font-family: sans-serif;
-        padding: 20px;
+        font-family: 'Segoe UI', sans-serif;
+        margin: 0;
+        background-color: #f4f4f4;
+        color: #333;
       }
+
+      header {
+        background-color: #2a9d8f;
+        color: white;
+        padding: 20px 0;
+        text-align: center;
+      }
+
+      nav {
+        background-color: #264653;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        padding: 10px 0;
+      }
+
+      nav a {
+        color: white;
+        text-decoration: none;
+        font-weight: bold;
+      }
+
       .container {
-        background: white;
-        padding: 20px;
-        max-width: 600px;
-        margin: auto;
+        max-width: 1000px;
+        margin: 40px auto;
+        padding: 0 20px;
+        background-color: white;
         border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      }
+
+      section {
+        padding: 30px 0;
+        border-bottom: 1px solid #eee;
+      }
+
+      h1, h2 {
+        color: #2a9d8f;
+      }
+
+      footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #eee;
+        margin-top: 40px;
+        font-size: 0.9rem;
+      }
+
+      ul {
+        padding-left: 20px;
+      }
+
+      @media (max-width: 600px) {
+        nav {
+          flex-direction: column;
+          gap: 10px;
+        }
       }
     </style>
   </head>
   <body>
+    <header>
+      <h1>Welkom op de website van Lasse Jagersma</h1>
+      <p>Student Commerciële Economie | Web Enthousiasteling</p>
+    </header>
+
+    <nav>
+      <a href="#over">Over mij</a>
+      <a href="#skills">Skills</a>
+      <a href="#projecten">Projecten</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
     <div class="container">
-      <h1>Lasse Jagersma's HTML en CSS site</h1>
-      <h2>Over mij</h2>
-      <p>Ik ben student aan de Hanze in Groningen.<br>
-      Mijn favoriete vak is PPG Skills Vrije Ruimte.</p>
-      <h2>Waarom?</h2>
-      <p>Omdat je zelf mag kiezen wat je leert. Zoals HTML en CSS!</p>
-    </div>
-  </body>
-</html>
+      <section id="over">
+        <h2>Over mij</h2>
+        <p>
+          Hoi! Ik ben Lasse, student aan de Hanzehogeschool in Groningen. Mijn favoriete vak is
+          <strong>PPG Skills Vrije Ruimte</strong>, omdat ik daar de vrijheid krijg om te leren over wat ík interessant vind — zoals HTML, CSS en alles rond tech en marketing!
+        </p>
+      </section>
+
+      <section id="skills">
+        <h2>Mijn skills</h2>
+        <ul>
+          <li>HTML & CSS (basis)</li>
+          <li>SEO & Marketing automation</li>
+          <li>Git & GitHub (basiskennis)</li>
+          <li>Presentaties maken met AI-tools</li>
+          <li>Ondernemerschap en creatief denken</li>
+        </ul>
+      </section>
+
+      <section id="projecten">
+        <h2>Projecten</h2>
+        <p>Op dit moment werk ik aan een aantal toffe projecten zoals:</p>
+        <ul>
+          <li>Een persoonlijke portfolio-website (zoals deze!)</li>
+          <li>Onderzoek voor Waddenfun over themafeesten</li>
+          <li>SEO voor BTER financieel</li>
+        </ul>
+      </section>
+
+      <section id="contact">
+        <h2>Contact</h2>
+        <p
